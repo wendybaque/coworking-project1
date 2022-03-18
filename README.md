@@ -1,19 +1,16 @@
-#
-![Logo](http://image.noelshack.com/fichiers/2022/11/3/1647421367-logo22.jpg)
 
+![Logo](http://image.noelshack.com/fichiers/2022/11/3/1647421367-logo22.jpg)
 
 # Projet 1 - HTML/CSS Website
 
 Lancement du projet 1, en petit groupe, élaboration d'un site internet en HTML/CSS.
-
-
 
 ## Développeurs
 
 - [@EtienneApi](https://github.com/EtienneApi)
 - [@WendyBaque](https://github.com/wendybaque)
 - [@ChristianLim](https://github.com/Christian-81)
-- [@IsmaelAbg](https://github.com/ismamama1)
+- [@IsmaelAgb](https://github.com/ismamama1)
 - [@SaucyCorentin](https://github.com/SAUCYCorentin)
 
 
@@ -26,7 +23,6 @@ Lancement du projet 1, en petit groupe, élaboration d'un site internet en HTML/
 
 - Mobile : 600px
 - Desktop : 1200 px
-
 
 ## Couleurs 
 #F8F8F8
