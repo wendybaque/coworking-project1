@@ -1,0 +1,89 @@
+/* Partie Wendy - avis-dev */
+
+.dev-opinions {
+background-color: aliceblue;
+color: #1E1B18;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;  
+  margin: 3em;
+  padding: 3em;
+}
+
+p .dev-opinions {
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.satisfaction {
+    background-color: aliceblue;
+    color: #1E1B18;
+  display: rows;
+  justify-content: space-around;
+  align-items: center;  
+  margin: 3em;
+  padding: 3em;
+}
+
+img.dev-opinions {
+    width: 300px;
+    height: 300px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+div h2 {
+    font-family: 'Nunito Sans';
+    font-size: clamp(1rem, 4vw, 2rem);
+    background-color: aliceblue;
+    color: #FF2F47;
+    font-family: 'Nunito Sans';
+}
+
+h2 p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+}
+
+@media screen and (max-width: 600px){
+    .dev-opinions {
+        margin: 2em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .satisfaction {
+        background-color: aliceblue;
+    color: #1E1B18;
+  display: rows;
+  justify-content: space-around;
+  align-items: center;  
+  margin: 2em;
+  padding: 2em;
+    }
+
+    img.a.dev-opinions {
+        width: 50%;
+    }
+    p.dev-opinions {
+        font-size: clamp(1rem, 3vw, 1rem);;
+    }
+    div h2 {
+        font-size: clamp(1rem, 4vw, 2rem);
+        font-family: 'Nunito Sans';
+        background-color: aliceblue;
+        color: #FF2F47;
+    }}
+
+    /* Fin partie css avis dev Wendy */
