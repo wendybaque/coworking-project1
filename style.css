@@ -1,0 +1,233 @@
+:root {
+    --color-light: #F8F8F8;
+    --color-dark: #1E1B18;
+    --first-color: #85014E;
+    --second-color: #FF2F47;
+    --third-color: #148AB5;
+}
+
+    
+
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("fonts/nunito-sans.bold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+/*NAVBAR ET FOOTER*/
+
+
+.desktop{
+    visibility: hidden;
+}
+
+
+body {
+    display: flex;
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+.pic2 {
+    padding-left: 5%;
+}
+button {
+    background-color: var(--first-color);
+    border: none;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+    
+button.active{
+    transform: translateX(-215px);
+    
+}
+#nav{
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+#nav.active{
+    transform: translateX(0);
+}
+#nav ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+#nav ul li{
+    padding: 1rem 0;
+}
+#nav a{
+    font-family: "Nunito Sans";
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav a:hover{
+    color: #000000;
+    transition: 0.5s;
+}
+footer{
+    
+    background-color: var(--first-color);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height: auto;
+}
+footer h4 {
+    padding-left: 7vw;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    padding-right: 1.5vw;
+    width: 3vw;
+}
+footer li {
+    list-style-type: none;
+    font-family: "Nunito Sans";
+  
+}
+footer li a{
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+}
+footer li a:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
+}
+footer span{
+    display: block;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+@media screen and (min-width: 600px){
+    #btn,#nav  {
+        visibility: hidden;
+    }
+    body{
+        display: flex;
+        margin: 0;
+    }
+    .desktop{
+        top: 0;
+        visibility: visible;
+        display: flex; 
+        height: 10vh;
+        width: 100%;
+        background-color: var(--first-color); 
+        
+    }
+    .desktop ul{
+        display: flex;
+        margin: 0;
+        align-items: center;
+        
+       
+    }
+    .desktop ul li{
+        margin-right: -1vw;
+        list-style-type: none;
+        width: 22vw;
+    }
+    .desktop ul li a {
+        
+        font-family: "Nunito Sans";
+        text-decoration: none;
+        color: #ccc;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .desktop ul li a:hover{
+        color: #000000;
+        transition: 0.5s;
+    }
+    .pic1{
+        padding-right: 5vw;
+    }
+
+
+
+footer{
+    
+    background-color: var(--first-color);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height: auto;
+}
+footer h4 {
+    padding-left: 7vw;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    padding-right: 1.5vw;
+    width: 3vw;
+}
+footer li {
+    list-style-type: none;
+    font-family: "Nunito Sans";
+  
+}
+footer li a{
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+}
+footer li a:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
+}
+footer span {
+    display: block;
+    text-align: center;
+    padding-top: 2vh;
+}
+/*FIN HEADER ET FOOTER*/
