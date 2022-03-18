@@ -1,0 +1,35 @@
+:root {
+  --color-light: #f8f8f8;
+  --color-dark: #1e1b18;
+  --first-color: #85014e;
+  --second-color: #ff2f47;
+  --third-color: #148ab5;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("fonts/nunito-sans.bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Section 1 - Dev/Pro */
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.userDev {
+  padding-top: 10px;
+}
+
+.userPro {
+}
