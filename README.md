@@ -1,4 +1,3 @@
-#
 
 ![Logo](http://image.noelshack.com/fichiers/2022/11/3/1647421367-logo22.jpg)
 
@@ -14,8 +13,8 @@ Lancement du projet 1, en petit groupe, élaboration d'un site internet en HTML/
 - [@IsmaelAgb](https://github.com/ismamama1)
 - [@SaucyCorentin](https://github.com/SAUCYCorentin)
 
-## Idées de font: (du site https://www.fontpair.co/)
 
+## Idées de font: (du site https://www.fontpair.co/)
 - Inter (Bold) & Inter (Regular)
 - Raleway & Nunito Sans
 - Montserrat
@@ -25,8 +24,7 @@ Lancement du projet 1, en petit groupe, élaboration d'un site internet en HTML/
 - Mobile : 600px
 - Desktop : 1200 px
 
-## Couleurs
-
+## Couleurs 
 #F8F8F8
 #148AB5
 #85014E
