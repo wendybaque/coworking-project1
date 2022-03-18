@@ -1,23 +1,80 @@
 :root {
-  --color-light: #f8f8f8;
-  --color-dark: #1e1b18;
-  --first-color: #85014e;
-  --second-color: #ff2f47;
-  --third-color: #148ab5;
+    --color-light: #f8f8f8;
+    --color-dark: #1e1b18;
+    --first-color: #85014e;
+    --second-color: #ff2f47;
+    --third-color: #148ab5;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+  
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  /*NAVBAR BAR */
+
+
+.desktop{
+    visibility: hidden;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
- 
-* {
+.pic2 {
+    padding-left: 5%;
+}
+#btn {
+    background-color: var(--first-color);
+    border: none;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+    
+button.active{
+    transform: translateX(-215px);
+    
+}
+#nav{
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+#nav.active{
+    transform: translateX(0);
+}
+#nav ul{
     padding: 0;
+    list-style-type: none;
     margin: 0;
-    box-sizing: border-box;
+}
+#nav ul li{
+    padding: 1rem 0;
+}
+#nav a{
+    font-family: "Nunito Sans";
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav a:hover{
+    color: #000000;
+    transition: 0.5s;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Header Christian */
 
 /* ---------------- Header Christian ---------------- */
 
@@ -49,6 +106,9 @@ h1 {
     h1 {
         padding-left: 160px;
         font-size: 5rem;
+    }
+    header {
+        padding:
     }
     
 }
@@ -121,213 +181,189 @@ input::placeholder:active {
     background-color: var(--color-light);
 }
 
-/* ---------------- Listing articles Christian ---------------- */
-
-.section-articles {
-    background-color: #85014E;
-    width: 100%;
-    height: 500px;
-}
-
-.box-article {
-    display: flex;
-    background-color: #f789c9;
-    height: auto;
-    width: 90%;
-    height: auto;
-}
-
-.img-coworking {
-    max-width: 20wh;
-    height: auto;
-}
-    
-@font-face {
-    font-family: "Nunito Sans";
-    src: url("fonts/nunito-sans.bold.ttf");
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url("fonts/Raleway-VariableFont_wght.ttf");
-}
-
-/* Partie Ismael - Devpro */
-
 /*Section 1 - Dev/Pro */
 
 .user {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px;
-}
-.userDev {
-  padding-top: 10px;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  .userDev {
+    padding-top: 10px;
+  }
 
-.userPro {
-}
+  /* Section Coworking par Corentin */
 
-/* Partie Wendy - avis-dev */
-
-.dev-opinions {
-background-color: aliceblue;
-color: #1E1B18;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;  
-  margin: 3em;
-  padding: 3em;
-}
-
-p .dev-opinions {
-    font-size: 1.5rem;
-    background-color: aliceblue;
-    display: block;
-    margin-block-start: 3em;
-    margin-block-end: 3em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+section.coworking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("assets/images/aaron-huber-s95oB2n9jng-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2.3rem;
 }
 
-.satisfaction {
-    background-color: aliceblue;
-    color: #1E1B18;
-  display: rows;
-  justify-content: space-around;
-  align-items: center;  
-  margin: 3em;
-  padding: 3em;
+section.coworking2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("assets/images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2.3rem;
 }
 
-img.dev-opinions {
-    width: 300px;
-    height: 300px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+section.coworking3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("assets/images/entrepreneur-gc3387ee1b_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2.8rem;
 }
 
-div h2 {
-    font-family: 'Nunito Sans';
-    font-size: clamp(1rem, 4vw, 2rem);
-    background-color: aliceblue;
-    color: #FF2F47;
-    font-family: 'Nunito Sans';
-}
 
-h2 p {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+section p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway';
     
+}
+
+div h1 {
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    color: aliceblue;
+    font-family: 'Nunito Sans';
 }
 
 @media screen and (max-width: 600px){
-    .dev-opinions {
-        margin: 2em;
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-    }
+  img.coworking {
+      width: 375px;
+  }
+  div h1 {
+    filter: drop-shadow(2px 2px 6px #000);
+}
+  section p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+   div.coworking h1 {
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito Sans', sans-serif;
+}
 
+}
+
+  /* Partie Wendy - avis-dev */
+
+.dev-opinions {
+    background-color: aliceblue;
+    color: #1E1B18;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+      margin: 3em;
+      padding: 3em;
+    }
+    
+    p .dev-opinions {
+        font-size: 1.5rem;
+        background-color: aliceblue;
+        display: block;
+        margin-block-start: 3em;
+        margin-block-end: 3em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
     .satisfaction {
         background-color: aliceblue;
-    color: #1E1B18;
-  display: rows;
-  justify-content: space-around;
-  align-items: center;  
-  margin: 2em;
-  padding: 2em;
+        color: #1E1B18;
+      display: rows;
+      justify-content: space-around;
+      align-items: center;  
+      margin: 3em;
+      padding: 3em;
     }
-
-    img.a.dev-opinions {
-        width: 50%;
+    
+    img.dev-opinions {
+        width: 300px;
+        height: 300px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
-    p.dev-opinions {
-        font-size: clamp(1rem, 3vw, 1rem);;
-    }
+    
     div h2 {
-        font-size: clamp(1rem, 4vw, 2rem);
         font-family: 'Nunito Sans';
+        font-size: clamp(1rem, 4vw, 2rem);
         background-color: aliceblue;
         color: #FF2F47;
-    }}
-
-    /* Fin partie css avis dev Wendy */
-
-
-/*NAVBAR ET FOOTER*/
-
-
-.desktop{
-    visibility: hidden;
-}
-
-
-body {
-    display: flex;
+        font-family: 'Nunito Sans';
+    }
     
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    h2 p {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        
+    }
     
-}
-.pic2 {
-    padding-left: 5%;
-}
-button {
-    background-color: var(--first-color);
-    border: none;
-    color: white;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 1rem;
-    transition: transform 0.3s ease-in-out;
-}
+    @media screen and (max-width: 600px){
+        .dev-opinions {
+            margin: 2em;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+        }
     
-button.active{
-    transform: translateX(-215px);
+        .satisfaction {
+      background-color: aliceblue;
+      color: #1E1B18;
+      display: rows;
+      justify-content: space-around;
+      align-items: center;  
+      margin: 2em;
+      padding: 2em;
+        }
     
-}
-#nav{
-    background-color: var(--first-color);
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    padding: 2rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-}
-#nav.active{
-    transform: translateX(0);
-}
-#nav ul{
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-}
-#nav ul li{
-    padding: 1rem 0;
-}
-#nav a{
-    font-family: "Nunito Sans";
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-#nav a:hover{
-    color: #000000;
-    transition: 0.5s;
-}
+        img.a.dev-opinions {
+            width: 50%;
+        }
+        p.dev-opinions {
+            font-size: clamp(1rem, 3vw, 1rem);;
+        }
+        div h2 {
+            font-size: clamp(1rem, 4vw, 2rem);
+            font-family: 'Nunito Sans';
+            background-color: aliceblue;
+            color: #FF2F47;
+        }
+    }
+    
+/* Footer */
+
 footer{
     
     background-color: var(--first-color);
-    position:absolute;
+    position:flex;
     bottom:0;
     width:100%;
     padding-top:50px;
@@ -373,12 +409,9 @@ footer span{
 
 @media screen and (min-width: 600px){
     #btn,#nav  {
-        visibility: hidden;
+        display:none;
     }
-    body{
-        display: flex;
-        margin: 0;
-    }
+    
     .desktop{
         top: 0;
         visibility: visible;
@@ -416,12 +449,17 @@ footer span{
         padding-right: 5vw;
     }
 
+    @media screen and (max-width: 600px){
+
+        .desktop ul {
+            display: none;
+        }
 
 
 footer{
     
     background-color: var(--first-color);
-    position:absolute;
+    position:flex;
     bottom:0;
     width:100%;
     padding-top:50px;
@@ -464,4 +502,5 @@ footer span {
     text-align: center;
     padding-top: 2vh;
 }
-/*FIN HEADER ET FOOTER*/
+
+}
