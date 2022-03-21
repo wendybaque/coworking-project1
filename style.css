@@ -19,7 +19,7 @@
 
   /*NAVBAR BAR */
 
-.pic2 {
+  .pic2 {
     padding-left: 5%;
 }
 #btn {
@@ -381,10 +381,7 @@ footer ul{
     justify-content: center;
 }
 
-footer img {
-    padding-right: 1.5vw;
-    width: 3vw;
-}
+
 footer li {
     list-style-type: none;
     font-family: "Nunito Sans";
@@ -413,22 +410,18 @@ footer span{
     #btn,#nav  {
         display:none;
     }
-    
     .desktop{
         top: 0;
         visibility: visible;
         display: flex; 
         height: 10vh;
         width: 100%;
-        background-color: var(--first-color); 
-        
+        background-color: var(--first-color);    
     }
     .desktop ul{
         display: flex;
         margin: 0;
-        align-items: center;
-        
-       
+        align-items: center; 
     }
     .desktop ul li{
         margin-right: -1vw;
@@ -436,7 +429,6 @@ footer span{
         width: 22vw;
     }
     .desktop ul li a {
-        
         font-family: "Nunito Sans";
         text-decoration: none;
         display: flex;
@@ -456,38 +448,36 @@ footer span{
 footer{
     
     background-color: var(--first-color);
-    position:flex;
+    /*display:flex;*/
     bottom:0;
-    width:100%;
+    /* width:100%; */
     padding-top:50px;
     height: auto;
 }
 footer h4 {
-    padding-left: 7vw;
+    
     font-family: "Nunito Sans";
     font-size: 25px;
+    text-align: center;
+    color: white;
 }
 footer ul{
-    display: flex;
-    justify-content: center;
+    padding-left: 8vw;
 }
-
 footer img {
     padding-right: 1.5vw;
     width: 3vw;
 }
 footer li {
     list-style-type: none;
-    font-family: "Nunito Sans";
-  
+    font-family: "Nunito Sans";  
 }
 footer li a{
     font-family: "Nunito Sans";
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
-    color: white;
-    
+    color: white;    
 }
 footer li a:hover{
     cursor: pointer;
@@ -496,8 +486,27 @@ footer li a:hover{
 }
 footer span {
     display: block;
-    text-align: center;
+    padding-left: 8vw;
     padding-top: 2vh;
 }
-
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+}
+.wrap h4 {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.wrap img{
+    width: 80px;
+    height: 80px;  
+}
+.menu{
+    visibility: hidden;
+}
+footer li a:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
 }
