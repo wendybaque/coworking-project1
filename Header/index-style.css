@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-light: #F8F8F8;
+    --color-dark: #1E1B18;
+    --first-color: #85014E;
+    --second-color: #FF2F47;
+    --third-color: #148AB5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- Header Christian ---------------- */
+
+header {
+    background-image: url("./assets/pexels-volkan-vardar-3887985.jpg" );
+    background-position: top -50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 1.2rem;
+    color: var(--color-light);
+    text-shadow: 10px 2px 15px var(--color-dark);
+    padding: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        padding-left: 160px;
+        font-size: 5rem;
+    }
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+@media screen and (min-width: 1200px) {
+    form {
+        width: 70%;
+    }
+    
+}
+
+input,.search-button {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    height: 4rem;
+    width: 100%;
+    padding-bottom: 7px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+input::placeholder {
+    color: var(--color-dark);
+}
+
+input::placeholder:active {
+    display: none;
+}
+
+.dates-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-debut, .date-fin {
+    color: var(--color-dark);
+    display: flex;
+    width: 49%;
+    border: 0;
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    text-justify: center;
+}
+
+.search-button {
+    height: 4rem;
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--second-color);
+    color: var(--color-light);
+    border: 0;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.search-button:active {
+    color: var(--second-color);
+    background-color: var(--color-light);
+}
+
