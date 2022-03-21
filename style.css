@@ -80,8 +80,21 @@ button.active{
 
 /* ---------------- Header Christian ---------------- */
 
+input.forcontrol {
+    border: #f8f8f8;
+    border-radius: 15px;
+}
+
+input.forcontrol2 {
+    border: #f8f8f8;
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
 header {
-    background-image: url("./assets/pexels-volkan-vardar-3887985.jpg" );
+    background-image: url("./assets/rodeo-project-management-software-PYqzYhTNjho-unsplash.jpg" );
     background-position: top -50px;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -104,17 +117,13 @@ h1 {
     padding: 30px;
 }
 
+
 @media screen and (min-width: 1200px) {
     h1 {
         padding-left: 160px;
         font-size: 5rem;
     }
-    header {
-        padding:
-    }
-    
 }
-
 
 form {
     display: flex;
@@ -122,16 +131,64 @@ form {
     width: 90%;
 }
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (max-width: 600px) {
     form {
         width: 70%;
+    }
+    header {
+        background-size: 270%;
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: start;
+        margin-bottom: 1rem;
+        color: var(--color-light);
+        text-shadow: 10px 2px 15px var(--color-dark);
+        padding: 1px;
+    }
+
+    input.forcontrol {
+        border: #f8f8f8;
+        border-radius: 10px;
+        height: 2.5rem;
+    }
+    
+    input.forcontrol2 {
+        border: #f8f8f8;
+        height: 2.5rem;
+        border-radius: 10px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    input,.search-button {
+        display: flex;
+        align-items: end;
+        font-family: 'Raleway', sans-serif;
+        height: 4rem;
+        width: 100%;
+        padding-bottom: 7px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    form.searchbar{
+        display: flex;
+
     }
     
 }
 
 input,.search-button {
     display: flex;
-    align-items: center;
+    align-items: end;
     font-family: 'Raleway', sans-serif;
     height: 4rem;
     width: 100%;
@@ -159,6 +216,8 @@ input,.search-button {
     color: var(--second-color);
     background-color: var(--color-light);
 }
+
+
 
 
 /* Footer */
