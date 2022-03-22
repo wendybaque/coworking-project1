@@ -35,24 +35,80 @@
   <!-- Partie  Corentin -->
   
     <header>
-        <h1>Vous avez un bien à louer à la journée ?<br>Nos équipes vous contacterons !</h1>
-        <form class="searchbar">
-            <div class="col-md-6form-group">
-                <label for="name" class="col-form-label">Votre nom</label>
-                <input type="text" class="forcontrol2" name="name" id="name" placeholder="Votre nom">
-              </div>
-              <div class="col-md-6form-group">
-                <label for="name" class="col-form-label">Votre prénom</label>
-                <input type="text" class="forcontrol2" name="organization" id="organization" placeholder="Votre prénom">
-              </div>
-            </div>
-            <div class="col-md-6form-group">
-                <label for="name" class="col-form-label">Votre adresse</label>
-                <input type="text" class="forcontrol" name="organization" id="organization" placeholder="Votre adresse">
-              </div>
-            </div>
-            <button class="search-button">Envoyer ma demande</button>
-        </form>
+        <h1>Vous avez un bien à louer à la journée ?<br>Nos équipes vous contacteront !</h1>
+        <div class="container">
+          <form action="action_page.php">
+        
+            <label for="fname">Votre nom</label>
+            <input type="text" id="fname" name="firstname" placeholder="Votre nom">
+        
+            <label for="lname">Votre prénom</label>
+            <input type="text" id="lname" name="lastname" placeholder="Votre prénom">
+
+            <label for="lname">Votre adresse complète</label>
+            <input type="text" id="lname" name="lastname" placeholder="Votre adresse complète">
+        
+            <label for="country">Pays</label>
+            <select id="country" name="country">
+              <option value="france">France</option>
+              <option value="italie">Italie</option>
+              <option value="belgique">Belgique</option>
+              <option value="allemagne">Allemagne</option>
+              <option value="portugal">Portugal</option>
+              <option value="espagne">Espagne</option>
+            </select>
+            <label for="goodswork1">Choisissez le type de bien</label>
+            <select name="goods" id="goodswork2">
+                <option value="">Cliquez ici pour selectionner le type de bien</option>
+                <option value="bureau">Local bureau</option>
+                <option value="bar">Bar</option>
+                <option value="maison">Maison</option>
+                <option value="salon de thé">Salon de thé</option>
+                <option value="appartement">Appartement</option>
+                <option value="jardin">Jardin</option>
+            </select>
+            <div>
+            <li id="category-3" class="popular-category">
+              <label class="selectit">
+              <input value="barbecue" type="checkbox"> Barbecue</label>
+          </li>
+          <li id="category-1167" class="popular-category">
+            <label class="selectit">
+              <input value="sports" type="checkbox"> Salle de sport</label>
+          </li>
+          <li id="category-1153" class="popular-category">
+            <label class="selectit">
+              <input value="jardin" type="checkbox"> Jardin</label>
+          </li>
+          <li id="category-474" class="popular-category">
+            <label class="selectit">
+              <input value="jacuzzi" type="checkbox"> Jaccuzi</label>
+          </li>
+          <li id="category-1156" class="popular-category">
+            <label class="selectit">
+              <input value="bar" type="checkbox"> Bar &amp; Cocktail</label>
+          </li>
+          <li id="category-1154" class="popular-category">
+            <label class="selectit">
+              <input value="computer" type="checkbox"> Ordinateurs</label>
+          </li>
+          <li id="category-1162" class="popular-category">
+            <label class="selectit">
+              <input value="chill" type="checkbox"> Chill</label>
+          </li>
+        </div>
+        <br>
+
+            
+        
+            <label for="subject">Un commentaire ?</label>
+            <textarea id="subject" name="subject" placeholder="Ecrivez-nous ici !" style="height:200px"></textarea>
+        
+            <input type="submit" value="Envoyer ma demande">
+        
+          </form>
+        </div>
+            <br><br>
         
     </header>
   
