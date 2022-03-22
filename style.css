@@ -272,8 +272,8 @@ div h1 {
   /* Partie Wendy - avis-dev */
 
 .dev-opinions {
-    background-color: aliceblue;
-    color: #1E1B18;
+    background-color: var(--color-light);
+    color: var(--color-dark);
       display: flex;
       justify-content: space-around;
       align-items: center;  
@@ -283,7 +283,7 @@ div h1 {
     
     p .dev-opinions {
         font-size: 1.5rem;
-        background-color: aliceblue;
+        background-color: var(--color-light);
         display: block;
         margin-block-start: 3em;
         margin-block-end: 3em;
@@ -292,8 +292,8 @@ div h1 {
     }
     
     .satisfaction {
-        background-color: aliceblue;
-        color: #1E1B18;
+        background-color: var(--color-light);
+        color: var(--color-dark);
       display: rows;
       justify-content: space-around;
       align-items: center;  
@@ -310,20 +310,25 @@ div h1 {
         margin-right: 3rem;
     }
     
-    div h2 {
+    div .h2-opinions {
+        background-color: var(--color-light);
         font-family: 'Nunito Sans';
         font-size: clamp(1rem, 4vw, 2rem);
-        background-color: aliceblue;
-        color: #FF2F47;
+        color: var(--second-color);
         font-family: 'Nunito Sans';
     }
     
-    h2 p {
+    .h2-opinions p {
+        font-family: 'Nunito Sans';
         padding-left: 3rem;
         padding-right: 3rem;
         margin-left: 3rem;
         margin-right: 3rem;
         
+    }
+
+    span {
+        font-weight: bold;
     }
     
     @media screen and (max-width: 600px){
@@ -335,8 +340,8 @@ div h1 {
         }
     
         .satisfaction {
-      background-color: aliceblue;
-      color: #1E1B18;
+      background-color: var(--color-light);
+      color: var(--color-dark);
       display: rows;
       justify-content: space-around;
       align-items: center;  
@@ -353,15 +358,120 @@ div h1 {
         div h2 {
             font-size: clamp(1rem, 4vw, 2rem);
             font-family: 'Nunito Sans';
-            background-color: aliceblue;
-            color: #FF2F47;
+            color: var(--second-color);
         }
     }
+
+/* DEBUT PARTIE WENDY CONTACT*/
+
+.contact {
+    display:flex;
+    background-image: url("./assets/aaron-huber-s95oB2n9jng-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.h2-contact {
+    font-family: 'Nunito Sans';
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    color: var(--second-color);
+
+
+}
+
+.user-infos {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+    margin: 2em;
+    padding: 2em;
+}
+
+label {
+    font-family: 'Nunito Sans';
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+textarea {
+    
+}
+
+.button-contact {
+    font-family: 'Nunito Sans';
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-light);
+    background-color: var(--first-color);
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+    border-radius: 6px;
+    border: #85014e solid 2px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin: 1em;
+    padding: 1em;
+}
+
+.coordonnées {
+    font-family: 'Nunito Sans';
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-light);
+    margin: 2em;
+    padding: 2em;
+}
+
+a:hover {
+    color: var(--second-color);
+  }
+
+@media screen and (min-width: 600px){
+    .contact {
+        margin: 2em;
+        padding: 2em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .h2-contact {
+        font-size: clamp(1rem, 4vw, 2rem);
+        font-family: 'Nunito Sans';
+        color: var(--second-color);
+    }
+
+    .button-contact {
+
+    }
+}
+
+/* FINT PARTIE WENDY CONTACT */
     
 /* Footer */
 
 footer{
-    
     background-color: var(--first-color);
     position:flex;
     bottom:0;
@@ -503,4 +613,4 @@ footer span {
     padding-top: 2vh;
 }
 
-}
+} }
