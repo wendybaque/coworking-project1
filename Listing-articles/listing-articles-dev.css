@@ -17,11 +17,10 @@
 
 body {
     padding: 2rem;
+    height: 100vh;
 }
 
 /* ---------------- Listing articles Christian ---------------- */
-
-main
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -50,6 +49,7 @@ h1 {
 
 .box-article {
     margin-bottom: 2rem;
+    height: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -57,6 +57,7 @@ h1 {
         display: flex;
         flex-direction: row;
         width: 100%;
+        height: 100%;
         margin-bottom: 2.5rem;
     }
 }
@@ -159,12 +160,12 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
 }
 
 @media screen and (min-width: 1200px) {
     .place-dispo {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }    
 }
@@ -221,28 +222,58 @@ h3 {
     }
 }
 
+.btn-cta {
+    background-color: var(--first-color);
+    padding: 10px;
+    width: 15vh;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color-light);
+}
+
+.btn-cta:hover {
+    opacity: 0.8;
+}
+
+.stars {
+    color: var(--second-color);
+}
+
 .comment {
     display: none;
-    color: var(--second-color);
-    padding-bottom: 1rem;
+    padding-bottom: 0.6rem;
 }
 
 @media screen and (min-width: 1200px) {
     .comment {
         display: contents;
         display: flex;
+        align-items: center;
     }
 }
 
 .comment>p {
     font-size: 1.2rem;
     margin-left: 0.5rem;
-    color: var(--color-dark);
+    /* color: var(--color-dark); */
 }
 
 .comment-important {
-    color: var(--color-dark);
     font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+    .comment-important {
+        padding-left: 5px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .box-star-comment {
+        display: flex;
+        padding-left: 15px;
+    }
 }
 
 .pages-numbers {
