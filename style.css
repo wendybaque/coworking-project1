@@ -26,13 +26,13 @@
     color: white;
     position: fixed;
     top: 20px;
-    right: 35px;
+    right: 41px;
     padding: 1rem;
     transition: transform 0.3s ease-in-out;
 }
 
 button.active{
-    transform: translateX(-241px);
+    transform: translateX(-232px);
 
 
 }
