@@ -19,11 +19,6 @@
 
   /*NAVBAR BAR */
 
-/* 
-.desktop{
-    visibility: hidden;
-}
-
 .pic2 {
     padding-left: 5%;
 }
@@ -72,207 +67,262 @@ button.active{
 #nav a:hover{
     color: #000000;
     transition: 0.5s;
-} */
-
-/* DEBUT PARTIE WENDY CONTACT*/
-
-.contact {
-    display:flex;
-    background-image: url("./assets/aaron-huber-s95oB2n9jng-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-.h2-contact {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    margin: 2em;
-    padding: 2em;
-    display: flex;
-    color: var(--second-color);
-}
-
-.user-infos {
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-    margin: 1em;
-    padding: 1em;
-    width: 100%;
-    margin: 1em;
-    padding: 1em;
-}
-
-label {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-light);
-    margin: 1em;
-    padding: 1em;
-    width: 100%;
-    margin: 1em;
-    padding: 1em;
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
     
 }
 
-textarea {
-    height: 200px;
-    width: 100%;
-    margin: 1em;
-    padding: 1em;
+/* Header Christian */
+
+/* ---------------- Header Christian ---------------- */
+
+header {
+    background-image: url("/assets/images/austin-distel-60caCHdOqH0-unsplash.jpg");
+    background-position: top -50px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    min-height: 90vh;
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.button-contact {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 1.2rem;
     color: var(--color-light);
-    background-color: var(--first-color);
+    text-shadow: 10px 2px 15px var(--color-dark);
+    padding: 30px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        padding-left: 160px;
+        font-size: 5rem;
+    }
+}
+
+form {
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-    border-radius: 6px;
-    border: #85014e solid 2px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    margin: 1em;
-    padding: 1em;
+    flex-direction: column;
+    width: 90%;
 }
 
-.coordonnées {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    color: var(--color-light);
-    margin: 2em;
-    padding: 2em;
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 70%;
+    }
+    header {
+        background-size: 400%;
+        background-repeat:repeat;
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: start;
+        margin-bottom: 1rem;
+        color: var(--color-light);
+        text-shadow: 10px 2px 15px var(--color-dark);
+        padding: 1px;
+    }
+
 }
 
-a:hover {
-    color: var(--second-color);
+@media screen and (min-width: 600px) and (max-width: 1199px){
+    form {
+        width: 70%;
+    }
+    header {
+        background-size: 350%;
+    }
+
+}
+
+/* ---------------- Header Christian ---------------- */
+
+/*-------------Form pro Corentin (Mobile)------------*/
+
+@media screen and (max-width: 600px) {
+
+input[type=text], select, textarea {
+    width: 140%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #85014e;
+    color: white;
+    padding: 12px 20px;
+    width: 140%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #ad0d8b;
+  }
+  
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
 
-@media screen and (min-width: 600px){
-    .contact {
-        display:flex;
-        background-image: url("./assets/aaron-huber-s95oB2n9jng-unsplash.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+  label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  li.popular-category{
+      list-style: none; 
+      display:inline-block; 
+      padding: 0.3rem;
+      
     }
-    
-    .h2-contact {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 2em;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin: 2em;
-        padding: 2em;
-        display: flex;
-        color: var(--second-color);
-    }
-    
-    .user-infos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: stretch;
-        margin: 1em;
-        padding: 1em;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-    }
-    
-    label {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--color-light);
-        margin: 1em;
-        padding: 1em;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-        
-    }
-    
-    textarea {
-        height: 200px;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: stretch;
-        border-radius: 6px;
-    }
-    
-    .button-contact {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 2em;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--color-light);
-        background-color: var(--first-color);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-        border-radius: 6px;
-        border: #85014e solid 2px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        margin: 1em;
-        padding: 1em;
-    }
-    
-    .coordonnées {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        color: var(--color-light);
-        margin: 2em;
-        padding: 2em;
-    }
+
 }
 
-/* FIN PARTIE WENDY CONTACT */
+/*-------------Form pro Corentin(Mobile)------------*/
+
+/*-------------Form pro Corentin (Desktop)------------*/
+
+@media screen and (min-width: 1200px) {
+
+    input[type=text], select, textarea {
+        width: 110%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px;
+        resize: vertical 
+      }
+      
+      
+      input[type=submit] {
+        background-color: #85014e;
+        color: white;
+        justify-items: center;
+        width: 110%;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      
+      
+      input[type=submit]:hover {
+        background-color: #ad0d8b;
+      }
+      
+     
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    
+      label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.9rem;
+      }
+    
+      li.popular-category{
+          list-style: none; 
+          display:inline-block; 
+          padding: 0.3rem;
+          
+        }
+    
+    }
+    
+    /*-------------Form pro Corentin(Desktop)------------*/
+
+    /*-------------Form pro Corentin (Tablette)------------*/
+
+    @media all and (min-width: 600px) and (max-width: 1199px) {
+
+        input[type=text], select, textarea {
+            width: 140%; 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px;
+            resize: vertical; 
+          }
+          
+          
+          input[type=submit] {
+            background-color: #85014e;
+            color: white;
+            padding: 12px 20px;
+            width: 140%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+          }
+          
+          
+          input[type=submit]:hover {
+            background-color: #ad0d8b;
+            
+          }
+          
+         
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+        
+          label {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.9rem;
+          }
+        
+          li.popular-category{
+              list-style: none; 
+              display:inline-block; 
+              padding: 0.3rem;
+              
+            }
+        
+        }
+    
+    /*-------------Form pro Corentin(Tablette)------------*/
 
 /* Footer */
-
+ 
 footer{
+ 
     background-color: var(--first-color);
     position:flex;
     bottom:0;
@@ -289,15 +339,12 @@ footer ul{
     display: flex;
     justify-content: center;
 }
-
-footer img {
-    padding-right: 1.5vw;
-    width: 3vw;
-}
+ 
+ 
 footer li {
     list-style-type: none;
     font-family: "Nunito Sans";
-  
+ 
 }
 footer li a{
     font-family: "Nunito Sans";
@@ -305,7 +352,7 @@ footer li a{
     text-decoration: none;
     font-size: 20px;
     color: white;
-    
+ 
 }
 footer li a:hover{
     cursor: pointer;
@@ -317,27 +364,23 @@ footer span{
     text-align: center;
     padding-top: 2vh;
 }
-
+ 
 @media screen and (min-width: 600px){
     #btn,#nav  {
         display:none;
     }
-    
     .desktop{
         top: 0;
         visibility: visible;
         display: flex; 
         height: 10vh;
         width: 100%;
-        background-color: var(--first-color); 
-        
+        background-color: var(--first-color);    
     }
     .desktop ul{
         display: flex;
         margin: 0;
-        align-items: center;
-        
-       
+        align-items: center; 
     }
     .desktop ul li{
         margin-right: -1vw;
@@ -345,9 +388,10 @@ footer span{
         width: 22vw;
     }
     .desktop ul li a {
-        
         font-family: "Nunito Sans";
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
         color: #ccc;
         font-size: 20px;
         font-weight: bold;
@@ -359,49 +403,40 @@ footer span{
     .pic1{
         padding-right: 5vw;
     }
-
-    @media screen and (max-width: 600px){
-
-        .desktop ul {
-            display: none;
-        }
-
-
+ 
 footer{
-    
+ 
     background-color: var(--first-color);
-    position:flex;
+    /*display:flex;*/
     bottom:0;
-    width:100%;
+    /* width:100%; */
     padding-top:50px;
     height: auto;
 }
 footer h4 {
-    padding-left: 7vw;
+ 
     font-family: "Nunito Sans";
     font-size: 25px;
+    text-align: center;
+    color: white;
 }
 footer ul{
-    display: flex;
-    justify-content: center;
+    padding-left: 8vw;
 }
-
 footer img {
     padding-right: 1.5vw;
     width: 3vw;
 }
 footer li {
     list-style-type: none;
-    font-family: "Nunito Sans";
-  
+    font-family: "Nunito Sans";  
 }
 footer li a{
     font-family: "Nunito Sans";
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
-    color: white;
-    
+    color: white;    
 }
 footer li a:hover{
     cursor: pointer;
@@ -410,8 +445,27 @@ footer li a:hover{
 }
 footer span {
     display: block;
-    text-align: center;
+    padding-left: 8vw;
     padding-top: 2vh;
 }
-
-} }
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+}
+.wrap h4 {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.wrap img{
+    width: 80px;
+    height: 80px;  
+}
+.menu{
+    visibility: hidden;
+}
+footer li a:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
+}
