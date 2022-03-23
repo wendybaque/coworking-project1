@@ -46,6 +46,7 @@ button.active{
     padding: 3rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 4;
 }
 #nav.active{
     transform: translateX(0);
@@ -123,6 +124,14 @@ h1 {
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    header {
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+}
 
 form {
     display: flex;
@@ -219,7 +228,7 @@ input::placeholder:active {
   }
   @media screen and (max-width: 600px) {
     .user-card {
-      margin: 3.5rem;
+      margin: 2.6rem;
     }
   }
    
@@ -252,8 +261,8 @@ input::placeholder:active {
     font-family: "Raleway", sans-serif;
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: 2.5rem;
-    padding-top: 1rem;
+    padding-bottom: 1.9rem;
+    padding-top: 0.5rem;
   }
    
   .user a {
@@ -275,7 +284,7 @@ input::placeholder:active {
     color: var(--first-color);
     font-family: "Raleway", sans-serif;
     font-size: 1, 2rem;
-
+    
 } 
 
   /* Section Coworking par Corentin */
@@ -486,6 +495,11 @@ span {
     .img-box-dev-opinions {
         width: 50%;
         }
+
+     .box-dev-opinions {
+        margin: 1rem;
+
+    }
     }
 
 /* FIN PARTIE WENDY DEV OPINIONS*/
