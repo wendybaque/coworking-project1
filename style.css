@@ -39,6 +39,7 @@ button.active{
     
 }
 #nav{
+    
     background-color: var(--first-color);
     position: fixed;
     top: 0;
@@ -51,12 +52,20 @@ button.active{
 #nav.active{
     transform: translateX(0);
 }
+.desktop ul{
+    max-width: 98vw;
+}
+.desktop ul li a{
+    text-align: center;
+}
 #nav ul{
+    
     padding: 0;
     list-style-type: none;
     margin: 0;
 }
 #nav ul li{
+    
     padding: 1rem 0;
 }
 #nav a{
@@ -64,6 +73,7 @@ button.active{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    
 }
 #nav a:hover{
     color: #000000;
