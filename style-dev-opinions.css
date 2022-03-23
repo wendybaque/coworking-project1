@@ -19,7 +19,7 @@
 
   /*NAVBAR BAR */
 
-/* 
+
 .desktop{
     visibility: hidden;
 }
@@ -72,203 +72,144 @@ button.active{
 #nav a:hover{
     color: #000000;
     transition: 0.5s;
-} */
-
-/* DEBUT PARTIE WENDY CONTACT*/
-
-.contact {
-    display:flex;
-    background-image: url("./assets/aaron-huber-s95oB2n9jng-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-.h2-contact {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
+/* Header Christian */
+
+/* DEBUT PARTIE WENDY DEV OPINIONS */
+
+.section.opinions-dev { /* Grande section qui englobe toutes les cartes d'avis + satisfaction */
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
     margin: 2em;
     padding: 2em;
-    display: flex;
-    color: var(--second-color);
-}
-
-.user-infos {
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-    margin: 1em;
-    padding: 1em;
     width: 100%;
-    margin: 1em;
-    padding: 1em;
+    height: 100vh;
+    }
+
+.box-dev-opinions { /* 1 carte d'avis dupliqué en 4/nombre d'avis*/
+    font-family: "Nunito-Sans", sans-serif;
+    margin: 2em;
+    padding: 2em;
 }
 
-label {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-light);
-    margin: 1em;
-    padding: 1em;
+.img-box-dev-opinions { /* Image de la carte d'avis */
+    position: relative;
     width: 100%;
-    margin: 1em;
-    padding: 1em;
-    
-}
-
-textarea {
-    height: 200px;
-    width: 100%;
-    margin: 1em;
-    padding: 1em;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-    border-radius: 6px;
-}
-
-.button-contact {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-light);
-    background-color: var(--first-color);
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-    border-radius: 6px;
+    height: auto;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-radius: 4px;
     border: #85014e solid 2px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    margin: 1em;
-    padding: 1em;
+
 }
 
-.coordonnées {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
+.avis { /* Texte sur l'image "Prénom du dev, fonction" */
+    z-index: 3;
+    background-color: var(--color-dark);
     color: var(--color-light);
-    margin: 2em;
-    padding: 2em;
+    border-radius: 4px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    width: 200px;
 }
 
-a:hover {
+.stars { /* Image étoile sans fond à mettre sur l'image de la carte d'avis */
+    z-index:2;
+    position: absolute;
+    left: 12rem;
+}
+
+.h2-opinions { /* Titre de l'avis en dessus de la carte */
+    background-color: var(--color-light);
+    font-family: 'Nunito Sans';
+    font-size: clamp(1rem, 4vw, 2rem);
     color: var(--second-color);
-  }
-
-@media screen and (min-width: 600px){
-    .contact {
-        display:flex;
-        background-image: url("./assets/aaron-huber-s95oB2n9jng-unsplash.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    
-    .h2-contact {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 2em;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin: 2em;
-        padding: 2em;
-        display: flex;
-        color: var(--second-color);
-    }
-    
-    .user-infos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: stretch;
-        margin: 1em;
-        padding: 1em;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-    }
-    
-    label {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--color-light);
-        margin: 1em;
-        padding: 1em;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-        
-    }
-    
-    textarea {
-        height: 200px;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: stretch;
-        border-radius: 6px;
-    }
-    
-    .button-contact {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 2em;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--color-light);
-        background-color: var(--first-color);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-        border-radius: 6px;
-        border: #85014e solid 2px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        margin: 1em;
-        padding: 1em;
-    }
-    
-    .coordonnées {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        color: var(--color-light);
-        margin: 2em;
-        padding: 2em;
-    }
+    font-family: 'Nunito Sans', sans-serif;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-/* FIN PARTIE WENDY CONTACT */
+.p-opinions { /* Texte de l'avis en dessous de la carte */
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-light);
+    display: block;
+    align-items: center;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+    
+span {
+    font-weight: bold;
+    }
+
+.h2-satisfaction { /* Titre de la partie satisfaction */
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(1rem, 4vw, 2rem);
+    color: var(--second-color);
+    background-color: var(--color-light);
+    display: row;
+    justify-content: space-around;
+    align-items: center;  
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+    
+.p-satisfaction { /* Texte de la partie satisfaction */
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    display: row;
+    justify-content: space-around;
+    align-items: center;  
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+    
+@media screen and (max-width: 600px){
+    .section.opinions-dev{
+        margin: 2em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .satisfaction {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+        display: rows;
+        justify-content: space-around;
+        align-items: center;  
+        margin: 2em;
+        padding: 2em;
+        }
+    
+    .img-box-dev-opinions {
+        width: 50%;
+        }
+    }
+
+/* FIN PARTIE WENDY DEV OPINIONS*/
 
 /* Footer */
 
