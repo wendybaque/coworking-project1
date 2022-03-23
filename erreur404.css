@@ -195,10 +195,13 @@ footer span{
     padding-top: 2vh;
 }
 
+
+
 @media screen and (min-width: 600px){
     #btn,#nav  {
         display:none;
     }
+    
     .desktop{
         top: 0;
         visibility: visible;
@@ -299,3 +302,4 @@ footer li a:hover{
     color: #000000;
     transition: 0.5s;
 }
+
