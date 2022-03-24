@@ -81,15 +81,13 @@ button.active{
 /* ---------------- Header Christian ---------------- */
 
 header {
-    background-image: url("/assets/images/austin-distel-60caCHdOqH0-unsplash.jpg");
+    background-image: url("/assets/images/al-ghazali-vpTr0KN4vdY-unsplash.jpg");
     background-position: top -50px;
-    background-size: 200%;
+    background-size: 120%;
     background-repeat: no-repeat;
-    min-height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    min-height: 90vh;
     padding: 2rem;
 }
 
@@ -97,17 +95,18 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    text-align: start;
     margin-bottom: 1.2rem;
+    margin-left: 0vw;
     color: var(--color-light);
     text-shadow: 10px 2px 15px var(--color-dark);
-    padding: 30px;
+    padding: 10px;
 }
 
 
 @media screen and (min-width: 1200px) {
     h1 {
-        padding-left: 160px;
+        display: flex;
+        justify-content: center;
         font-size: 5rem;
     }
 }
@@ -150,6 +149,148 @@ form {
     }
 
 }
+
+/* SOCIAL MEDIA */
+
+.social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.facebook2 {
+    background-image: url(/assets/images/facebook.svg);
+    background-repeat: no-repeat;
+    padding: 1vw;
+    margin: 0.5vw;
+}
+
+.twitter2 {
+    background-image: url(/assets/images/twitter.svg);
+    background-repeat: no-repeat;
+    padding: 1vw;
+    margin: 0.5vw;
+}
+
+.linkedin2 {
+    background-image: url(/assets/images/linkedin.svg);
+    background-repeat: no-repeat;
+    padding: 1vw;
+    margin: 0.5vw;
+}
+
+.fleche {
+    display: flex;
+    justify-content: center;
+    margin-left: 13.5vw;
+}
+
+.socialp {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    color: #fafafa;
+}
+
+@media screen and (max-width: 400px) {
+    .facebook2 {
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        margin: 0 6px;
+        
+    }
+    .twitter2 {
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        margin: 0 6px;
+    }
+    .linkedin2 {
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        margin: 0 6px;
+    }
+
+    .socialp {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* SOCIAL MEDIA /*
+
+
+/* Desktop BLOC */
+
+    .cake {
+        display: flex;
+        width: 100%;
+        padding: 4vw;
+        border: 1vw;
+        border-radius: 10px;
+        border-color: #000000;
+        background-color: #f2f2f2;
+    }
+
+
+    .numberphone {
+       display: flex;
+       font-family: 'Raleway', sans-serif;
+       color: #000000;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .cake{
+        width: 100%;
+        height: 50px;
+        padding: 1px;
+        }
+
+        .siege {
+            display: flex;
+            margin-left: 6vw;
+            margin-bottom: 10px;
+        }
+
+        .paristext {
+            display: flex;
+            font-family: 'Raleway', sans-serif;
+            color: #1d1d1d;
+        }
+
+        .phone {
+            display: flex;
+            margin-left: 6vw;
+        }
+
+    }
+
+    @media screen and (min-width: 300px) {
+        .paristext {
+            font-family: 'Raleway', sans-serif;
+            color: #1d1d1d;
+        }
+
+        .paris1 {
+            width: 42px;
+            height: 42px;
+            margin: -05px;
+        }
+    }
+
+
+
+
+/*Desktop BLOC */
 
 /* ---------------- Header Christian ---------------- */
 
@@ -245,6 +386,10 @@ input[type=text], select, textarea {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
+        display: flex;
+        width: 100%;
+        
+        
       }
     
       label {
