@@ -274,6 +274,9 @@ form {
             margin-left: 7vw;
             background-color: #f2f2f2;
             border-radius: 10px;
+            border-width: 0.1px;
+            border-color: #1b1b1b;
+            border-style:solid;
         }
 
     }
