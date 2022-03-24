@@ -1,21 +1,26 @@
-:root {
-    --color-light: #f8f8f8;
-    --color-dark: #1e1b18;
-    --first-color: #85014e;
-    --second-color: #ff2f47;
-    --third-color: #148ab5;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-  }
+:root {
+    --color-light: #F8F8F8;
+    --color-dark: #1E1B18;
+    --first-color: #85014E;
+    --second-color: #FF2F47;
+    --third-color: #148AB5;
+    --stars-color: #e0c811;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0rem;
+    height: 100vh;
+}
+
 
 /*NAVBAR*/
 
@@ -382,6 +387,8 @@ div h1 {
     .box-dev-opinions {
         background-color: var(--first-color);
         display: flex;
+        width: 80%;
+        margin-left: 10vw;
         flex-direction: row;
     }
 }
@@ -525,6 +532,8 @@ span {
     }
     .h2-satisfaction {
         margin-bottom: 0;
+        font-size: 1;
+
     }
 
     .p-satisfaction {
@@ -538,7 +547,9 @@ span {
 
 .h2-satisfaction { /* Titre de la partie satisfaction */
     font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
     margin-bottom: 2rem;
 }
     
@@ -546,7 +557,6 @@ span {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     display: row;
-    justify-content: space-around;
     align-items: center;
     opacity: 0.7;
 }
@@ -555,7 +565,16 @@ span {
     color: var(--color-light);
     text-decoration: none;
 }
+
+@media screen and (max-width: 400px) {
+    .h2-satisfaction { /* Titre de la partie satisfaction */
+        font-family: 'Nunito Sans', sans-serif;
+        display: block;
+        font-size: clamp(2rem, 4vw, 4rem);
+        margin-bottom: 2rem;
+    }
     
+}
 
 /* FIN PARTIE WENDY DEV OPINIONS*/
     
