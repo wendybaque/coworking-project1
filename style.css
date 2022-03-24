@@ -367,55 +367,23 @@ div h1 {
  
 /* DEBUT PARTIE WENDY DEV OPINIONS */
 
-.section.opinions-dev { /* Grande section qui englobe toutes les cartes d'avis + satisfaction */
-    background-color: var(--color-light);
-    color: var(--color-dark);
+.section-opinions-dev { /* Grande section qui englobe toutes les cartes d'avis + satisfaction */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;  
-    margin: 2em;
-    padding: 2em;
-    width: 100%;
-    height: 100vh;
-    }
+}
 
 .box-dev-opinions { /* 1 carte d'avis dupliqué en 4/nombre d'avis*/
     font-family: "Nunito-Sans", sans-serif;
-    margin: 2em;
-    padding: 2em;
-}
-
-.img-box-dev-opinions { /* Image de la carte d'avis */
-    position: relative;
     width: 100%;
-    height: auto;
-    margin: 1rem 0;
-    /* margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-    border-radius: 4px;
-    border: #85014e solid 2px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 1rem;
 }
 
-.avis { /* Texte sur l'image "Prénom du dev, fonction" */
-    z-index: 3;
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border-radius: 4px;
-    opacity: 0.7;
-    position: absolute;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    width: 200px;
-}
-
-.stars { /* Image étoile sans fond à mettre sur l'image de la carte d'avis */
-    z-index:2;
-    position: absolute;
-    left: 12rem;
+@media screen and (min-width: 1200px) {
+    .box-dev-opinions {
+        background-color: var(--first-color);
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .h2-opinions { /* Titre de l'avis en dessus de la carte */
@@ -424,84 +392,170 @@ div h1 {
     font-size: clamp(1rem, 4vw, 2rem);
     color: var(--second-color);
     font-family: 'Nunito Sans', sans-serif;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.h2-opinions-desktop {
+    display: none;
+}
+
+.quote {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .box-h2-desktop-p-opinion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        position: relative;
+    }
+
+    .quote {
+        font-size: 8rem;
+        color: var(--second-color);
+        opacity: 0.1;
+        z-index: 5;
+        display: contents;
+    }
+
+    .fa-quote-left {
+        position: absolute;
+        top: 0.5rem;
+        left: 2.5rem;
+        opacity: 0.1;
+    }
+
+    .fa-quote-right {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 2.5rem;
+        opacity: 0.1;
+
+    }
+
+    .h2-opinions {
+        display: none;
+    }
+
+    .h2-opinions-desktop {
+        display: contents;
+        color: var(--color-light);
+        font-size: 2.5rem;
+    }
+}
+
+.img-box-dev-opinions { /* Image de la carte d'avis */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .img-box-dev-opinions {
+        max-width: 550px;
+        height: auto;
+    }
+}
+
+.img-box-dev-opinions img {
+    width: 100%;
+    height: auto;
+}
+
+.avis { /* Texte sur l'image "Prénom du dev, fonction" */
+    z-index: 3;
+    font-size: 1.3rem;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.stars { /* Image étoile sans fond à mettre sur l'image de la carte d'avis */
+    z-index:2;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--stars-color);
 }
 
 .p-opinions { /* Texte de l'avis en dessous de la carte */
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     background-color: var(--color-light);
-    display: block;
     align-items: center;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    padding: 0.7rem 1rem 1rem 1rem;
 }
-    
+
+@media screen and (min-width: 1200px) {
+    .p-opinions {
+        width: 100%;
+        padding: 0;
+        background-color: var(--first-color);
+        color: var(--color-light);
+        opacity: 0.7;
+        margin-top: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
 span {
     font-weight: bold;
+}
+
+.satisfaction {
+    background-color: var(--first-color);
+    padding: 2rem;
+    color: var(--color-light);
+}
+
+@media screen and (min-width: 1200px) {
+    .satisfaction {
+        background-color: rgb(228, 228, 228);
+        color: var(--color-dark);
+        font-weight: 700;
+
     }
+    .h2-satisfaction {
+        margin-bottom: 0;
+    }
+
+    .p-satisfaction {
+        font-size: 2rem;
+    }
+
+    .p-satisfaction>a {
+        color: var(--color-dark);
+    }
+}
 
 .h2-satisfaction { /* Titre de la partie satisfaction */
     font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(1rem, 4vw, 2rem);
-    color: var(--second-color);
-    background-color: var(--color-light);
-    display: row;
-    justify-content: space-around;
-    align-items: center;  
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 2rem;
 }
     
 .p-satisfaction { /* Texte de la partie satisfaction */
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
-    background-color: var(--color-light);
-    color: var(--color-dark);
     display: row;
     justify-content: space-around;
-    align-items: center;  
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    }
+    align-items: center;
+    opacity: 0.7;
+}
 
+.p-satisfaction>a {
+    color: var(--color-light);
+    text-decoration: none;
+}
     
-@media screen and (max-width: 600px){
-    .section.opinions-dev{
-        margin: 2em;
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-        }
-    
-    .satisfaction {
-        background-color: var(--color-light);
-        color: var(--color-dark);
-        display: rows;
-        justify-content: space-around;
-        align-items: center;  
-        margin: 2em;
-        padding: 2em;
-        }
-    
-    .img-box-dev-opinions {
-        width: 50%;
-        }
-
-     .box-dev-opinions {
-        margin: 1rem;
-
-    }
-    }
 
 /* FIN PARTIE WENDY DEV OPINIONS*/
     
