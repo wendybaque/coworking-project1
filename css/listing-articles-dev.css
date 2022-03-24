@@ -339,6 +339,7 @@ h3 {
         display: contents;
         display: flex;
         align-items: center;
+        margin-bottom: 04vw;
     }
 }
 
