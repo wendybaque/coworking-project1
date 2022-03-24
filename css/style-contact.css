@@ -231,16 +231,6 @@ form {
 
 /* Desktop BLOC */
 
-    .cake {
-        display: flex;
-        width: 100%;
-        padding: 4vw;
-        border: 1vw;
-        border-radius: 10px;
-        border-color: #000000;
-        background-color: #f2f2f2;
-    }
-
 
     .numberphone {
        display: flex;
@@ -248,33 +238,47 @@ form {
        color: #000000;
     }
 
+    .paris1 {
+        width: 42px;
+        height: 42px;
+        margin: -05px;
+    }
+
     @media screen and (min-width: 1200px) {
-        .cake{
-        width: 100%;
-        height: 50px;
-        padding: 1px;
-        }
 
         .siege {
             display: flex;
-            margin-left: 6vw;
             margin-bottom: 10px;
+            justify-content: center;
         }
 
         .paristext {
             display: flex;
+            margin: 10px;
             font-family: 'Raleway', sans-serif;
             color: #1d1d1d;
         }
 
         .phone {
             display: flex;
-            margin-left: 6vw;
+            justify-content: center;
+            
+        }
+
+        .numberphone {
+            margin: 10px;
+        }
+
+        .cake {
+            width: 60%;
+            margin-left: 7vw;
+            background-color: #f2f2f2;
+            border-radius: 10px;
         }
 
     }
 
-    @media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
         .paristext {
             font-family: 'Raleway', sans-serif;
             color: #1d1d1d;
@@ -284,6 +288,16 @@ form {
             width: 42px;
             height: 42px;
             margin: -05px;
+        }
+
+        .cake {
+            display: flex;
+            width: 100%;
+            padding: 4vw;
+            border: 1vw;
+            border-radius: 10px;
+            border-color: #000000;
+            background-color: #f2f2f2;
         }
     }
 
