@@ -154,6 +154,17 @@ form {
 
 /* SOCIAL MEDIA */
 
+.numberphone {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.paristext {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+
 .social {
     display: flex;
     justify-content: center;

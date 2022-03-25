@@ -208,6 +208,11 @@ input::placeholder:active {
     background-color: var(--color-light);
 }
 
+.search-button a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
 /*Section 1 - Dev/Pro */
  
 .user {
