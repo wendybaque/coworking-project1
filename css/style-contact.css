@@ -528,7 +528,8 @@ footer{
     height: auto;
 }
 footer h4 {
-    padding-left: 7vw;
+    display: flex;
+    justify-content: center;
     font-family: "Nunito Sans";
     font-size: 25px;
 }
@@ -618,7 +619,9 @@ footer h4 {
     color: white;
 }
 footer ul{
-    padding-left: 8vw;
+    padding-left: 0vw;
+    display: flex;
+    justify-content: center;
 }
 footer img {
     padding-right: 1.5vw;
@@ -627,12 +630,16 @@ footer img {
 footer li {
     list-style-type: none;
     font-family: "Nunito Sans";  
+
 }
 footer li a{
     font-family: "Nunito Sans";
     font-weight: bold;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     font-size: 20px;
+    padding-top: 0.5rem;
     color: white;    
 }
 footer li a:hover{

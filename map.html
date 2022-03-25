@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <title>Kodework</title>
+</head>
+<body onload="init()">
+    <button id="btn">☰</button>
+    <nav id="nav">
+        <ul>
+ 
+            <li class="pic2"><a href="./index.html"><img src="/assets/logo/logoMOBILE.png" alt=""></a></li>
+            <li><a href="./listing-articles-dev.html">Le coin des développeurs</a></li>
+            <li><a href="./pro.html">Le coin des Pros</a></li>
+            <li><a href="./map.html">Nos espaces co-working</a></li>
+            <li><a href="./contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+    <nav class="desktop">
+        <ul>
+            <li class="pic1"><a href="./index.html"><img src="/assets/logo/logoDESKTOP.png" alt=""></a></li>
+            <li><a href="./listing-articles-dev.html">Le coin des développeurs</a></li>
+            <li><a href="./pro.html">Le coin des Pros</a></li>
+            <li><a href="./map.html">Nos espaces co-working</a></li>
+            <li><a href="./contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+ 
+    <header>
+         <section class = "map-container">
+            <h1>Trouvez un espace près de chez vous, ou ailleurs</h1>
+            <br><br>
+            <div id="map">
+            </div>
+            <br>
+            <p class="lorem1">Une demande ?</p>
+            <br>
+            <p class="lorem2">Dirigez-vous dans la rubrique "nous contacter" !</p>
+        </section>
+ 
+    </header>
+ 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="./js/map.js"></script>
+    <footer>
+        <div class="wrap">
+        <h4>Nous suivre sur les réseaux sociaux !</h4>
+             <ul class="socialNetwork">
+                 <li><a class="facebook" href="https://www.facebook.com" target="_blak"><img src="assets/logo/logoFacebook.png" alt="logo Facebook"></a></li>
+                 <li><a class="instagram" href="https://www.instagram.com" target="_blank"><img src="assets/logo/logoInsta.png" alt="logo Instagram"></a></li>
+                 <li><a class="twitter" href="https://www.twitter.com" target="_blank"><img src="assets/logo/logoTwitter.png" alt="logo Twitter"></a></li>
+                 <li><a class="youtube" href="https://www.youtube.com" target="_blank"><img src="assets/logo/logoYoutube.png" alt="logo Youtube"></a></li>
+             </ul>
+            </div>
+        <ul class="map"> 
+         <li class="address"><a href="https://goo.gl/maps/rWiZBTkqVic44BYH9" target="_blank">Disponible partout en France</a></li>
+        </ul>    
+           <span>©Copyright 2022-2023 / Tous droits réservés </span>
+        </footer>
+    
+        <script src="./js/script.js"></script>
+</body>
