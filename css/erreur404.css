@@ -98,6 +98,8 @@ button.active{
  .donnut{
     position: fixed;
     font-size: clamp(1.5rem, 4vw, 3rem);
+    color: white;
+    font-family: 'Raleway', sans-serif;
     top: -1vh;
     transform: translateY(0);
     min-width: 100vw;
@@ -110,28 +112,28 @@ button.active{
     }
 }
 
- @media screen and(max-width: 600px){
-    .flex-container img {
-        width: 100vw;
-        height: 100vh;
-        margin-bottom: -1vh;      
-    }
-}  
 .flex-container{
-    background-image: url(./assets/images/erreur404-tim-gouw-1K9T5YiZ2WU-unsplash.jpg );
-    /* background-size: 100%;  */
+    background-image: url(/assets/erreur404.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    /*min-height: 100vh;   */
     width: 100vw;
-    height: 100vh;
-    /* background-size: cover; */
-    /* background-size: auto; */
+    height: 110vh;
     background-position: center;
-    /* background-size: cover; */
+
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container{
+        background-size: 350%;
+        height: 100vh;
+        background-position-x: -90vh;
+    }
+    
 }
 
 
- 
+
+
 
 
     

@@ -83,9 +83,9 @@ button.active{
 /* ---------------- Header Christian ---------------- */
 
 header {
-    background-image: url("/assets/images/al-ghazali-vpTr0KN4vdY-unsplash.jpg");
+    background-image: url("/assets/images/bruce-mars-FWVMhUa_wbY-unsplash.jpg");
     background-position: top -50px;
-    background-size: 120%;
+    background-size: 130%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -165,6 +165,8 @@ form {
     background-repeat: no-repeat;
     padding: 1vw;
     margin: 0.5vw;
+    width: 42px;
+    height: 42px;
 }
 
 .twitter2 {
@@ -172,13 +174,17 @@ form {
     background-repeat: no-repeat;
     padding: 1vw;
     margin: 0.5vw;
+    width: 42px;
+    height: 42px;
 }
 
 .linkedin2 {
     background-image: url(/assets/images/linkedin.svg);
     background-repeat: no-repeat;
     padding: 1vw;
-    margin: 0.5vw;
+    margin: 0.50vw;
+    width: 42px;
+    height: 42px;
 }
 
 .fleche {
@@ -197,7 +203,7 @@ form {
     color: #fafafa;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .facebook2 {
         display: inline-block;
         background-repeat: no-repeat;
@@ -246,6 +252,7 @@ form {
         margin: -05px;
     }
 
+
     @media screen and (min-width: 1200px) {
 
         .siege {
@@ -273,7 +280,7 @@ form {
 
         .cake {
             width: 60%;
-            margin-left: 7vw;
+            margin-left: 0vw;
             background-color: #f2f2f2;
             border-radius: 10px;
             border-width: 0.1px;
