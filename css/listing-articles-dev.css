@@ -109,6 +109,7 @@ h1 {
 @media screen and (min-width: 1200px) {
     h1 {
         font-size: 4rem;
+        margin-top: 2vw;
         display: flex;
         margin-left: 15vw;
     }

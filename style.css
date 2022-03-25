@@ -550,6 +550,11 @@ span {
     .p-satisfaction>a {
         color: var(--color-dark);
     }
+
+    .erreur404 {
+        color: #000000;
+        text-decoration: none;
+    }
 }
 
 .h2-satisfaction { /* Titre de la partie satisfaction */
