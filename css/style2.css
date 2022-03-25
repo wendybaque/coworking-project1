@@ -151,6 +151,17 @@ form {
 
 }
 
+.team {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    color: #fafafa;
+}
+
 /* ---------------- Header Christian ---------------- */
 
 /*-------------Form pro Corentin (Mobile)------------*/
